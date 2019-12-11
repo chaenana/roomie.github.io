@@ -172,13 +172,12 @@ button
 }
 #main .section:nth-child(2) h3{
     text-align: left;font-size: 25px; color: rgb(82, 82, 82);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #main .section:nth-child(2) #texbox{
     font-size: 15px;
     width: 60%;
-    font-weight: bold;
     line-height: 30px;
 }
 
@@ -347,6 +346,7 @@ button
     height: 100%;
     width: 90%;
     position: relative;
+    padding-top: 100px;
 }
 
  
