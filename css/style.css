@@ -712,3 +712,27 @@ button
     font-weight: normal;
     font-size: 15px;
 }
+
+footer{overflow:hidden;display:flex;position:fixed;bottom:0;right:0;left:0;height:80px;padding-right:40px;padding-left:40px;
+    justify-content:space-between; z-index: 99;
+  align-items:center;color: #818181;}
+  
+  .fotter{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .spanright{
+    float: right;
+  }
+  .spanleft{
+    float: left;
+  }
+  
+  
+  .spancenter{
+    margin-left: 400px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #818181;
+  }
