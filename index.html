@@ -98,17 +98,17 @@
                 <div id="gallery" class="gallery">
                         <div class="view">
                           <div class="view-container">
-                            <div class="view-item"><img src="img/step0.png" width="25%" alt="갤러리 이미지 1"></div>
-                            <div class="view-item"><img src="img/step1.png" width="25%" alt="갤러리 이미지 2"></div>
-                            <div class="view-item"><img src="img/step0.png" width="25%" alt="갤러리 이미지 3"></div>
+                            <div class="view-item" id="img1"><img src="img/step0.png" width="25%" alt="갤러리 이미지 1"></div>
+                            <div class="view-item" id="img2"><img src="img/step1.png" width="25%" alt="갤러리 이미지 2"></div>
+                            <div class="view-item" id="img3"><img src="img/step0.png" width="25%" alt="갤러리 이미지 3"></div>
                           </div>
             </section>  
 
 <!--4번째 페이지-->
         <section class="section">
             <div class="section-content">
-
             
+            <div class="texts">
             <h1 id="sec5-h1">사용자 성격 유형 분석을 통한<br>매칭 서비스</h1>
             <span class="underline">&nbsp;</span><br>
             <h4 id="sec5-h4">성격 유형 분석 부터 라이프 스타일 분석까지</h4>
@@ -120,7 +120,8 @@
             </p>
             
             <a href="https://drive.google.com/file/d/1vkYYuBtrlMMM62tmCliUWfqlzcUaEutp/view?usp=sharing" target="_blank" ><button class="btn3" >기획서 다운로드</button></a>
-                    </div>
+        </div>            
+        </div>
                 </section>  
 <!--5번째 페이지-->
     <section class="section">
@@ -145,8 +146,7 @@
     <section class="section" id="third">
         <div class="section-content">
                 <h2>Video</h2>
-            <video src= "video.mp4" width="70%" controls="controls">
-            </video>
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/ukImzDpP8U4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </video>
         </div>
     </section>
 
@@ -161,6 +161,9 @@
 <!--8번째 페이지-->
         <section class="section" id="about">
                 <div class="section-content">
+                    <div class="typebox">
+                        <img src="img/type01.png" width="30%"><img src="img/type02.png"  width="30%"><img src="img/type03.png" width="30%">
+                    </div>
                   <div class="texx">
                 <h3>What type of<br>roommate<br>do you want?</h3>
                 <span class="underline">&nbsp;</span><br>
@@ -175,42 +178,56 @@
  <!--9번째 페이지-->           
         <section class="section">
                 <div class="section-content">
+                        <div class="firstbox">
+                                <img src="img/first01.png" width="30%"><img src="img/first02.png"  width="30%">
+                            </div>
+                        <div class="texx">
                     <h3>What personality<br>do you have?</h3>
-                    <span class="underline">&nbsp;</span>
+                    <span class="underline">&nbsp;</span><br>
                     <p>성격 유형을 설정 해주세요.<br>
                     
                     나와 상대방 모두를 위해
                     솔직한 답변이 필요합니다!
                     </p>
                 </div>
+                </div>
             </section>  
 <!--조원 소개-->
     <section class="section" id="roomie">
             <div class="section-content">
-                    <h2>Team.&nbsp;오늘부터 함께 산단 마리야</h2>
-                    <ul class="name">
+                    <h2 class="team">Team.&nbsp;<span class="big">오</span>늘부터 <span class="big">함</span>께 산단 <span class="big">마</span>리야</h2>
+                    <div class="name">
                         <div class="circle">
                             <div id="chaena">
-                                <h2>김채나</h2>
-                                <h3>Programmer</h3>
-                                <p>kkd03021@naver.com</p>
+                                    <p class="email">kkd03021@naver.com</p>
                             </div>
+                            <h2 class="naming">김채나</h2>
+                            <div class="lines">&nbsp;</div>
+                            <h3 class="major">Programmer</h3>
+                            <h3 class="phone">010-6405-7862</h3>
                         </div>
                         <div class="circle">
                             <div id="hyen">
-                                <h2>김혜인</h2>
-                                <h3>Planner</h3>
-                                <p>hxxiny@naver.com</p>
+                                    <p class="email">hxxiny@naver.com</p>
+
                                 </div>
+                                <h2 class="naming">김혜인</h2>
+                                <div class="lines">&nbsp;</div>
+                                <h3 class="major">Planner</h3>
+                                <h3 class="phone">010-5188-8853</h3>
+
                         </div>
                         <div class="circle">
-                            <div id="yunjae" >
-                                <h2>이윤재</h2>
-                                <h3>Designer</h3>
-                                <p>dbswo99201@naver.com</p>
+                            <div id="yunjae">
+                                    <p class="email">dbswo99201@naver.com</p>
                             </div>
+                            <h2 class="naming">이윤재</h2>
+                            <div class="lines">&nbsp;</div>
+                            <h3 class="major">Designer</h3>
+                            <h3 class="phone">010-9398-5796</h3>
+
                         </div>
-                    </ul>
+                    </div>
     
             </div>
         </section>
