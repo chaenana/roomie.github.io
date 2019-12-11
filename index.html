@@ -11,6 +11,9 @@
 
 </head>
 <body>
+     <!--cursor-->
+     <div id="cursor-dot">&nbsp;</div>
+     <div id="cursor-bg">&nbsp;</div>
 
 <!--헤더-->
 <nav id="global-nav">
@@ -76,32 +79,36 @@
                 <div class="section-content">
                     
                     <h2>roomie&nbsp;,<span class="textsub">&nbsp;&nbsp;어떤 기능이 있을까요?</span></h2>
-                    
+                    <div class="container" >
                         <ul class="list">
-                    <li class="selected">
-                            <a href="#">
+                    <li class="toggle" data-target="#changeImage" data-toggle="attribute" 
+                    data-switch="./img/list1.png" width="25%">
+                            
                         <div class="fun" id="func1">
                             <p><span class="bold">1</span> &nbsp; &nbsp;&nbsp; 성격 유형 분석을 통한 맞춤 루미 매칭 서비스</p>
-                        </div></a></li><li>
-                                <a href="#">
+                        </div></li>
+                        
+                        <li class="toggle" data-target="#changeImage" data-toggle="attribute" 
+                        data-switch="./img/list3.png" width="25%">
+                                
                         <div class="fun" id="func2">
                             <p><span class="bold">2</span> &nbsp;&nbsp;&nbsp; 월세 및 보증금 예산 계산기 & 공동계좌 관리 서비스</p>
-                        </div></a></li><li>
-                                <a href="#">
+                        </div></li>
+
+                        <li class="toggle" data-target="#changeImage" data-toggle="attribute" 
+                        data-switch="./img/list2.png" width="25%">
+                                
                         <div class="fun" id="func3">
                             <p><span class="bold">3</span> &nbsp;&nbsp;&nbsp; 커뮤니티 및 지속적인 법적 및 일상 정보 제공</p>
-                        </div></a></li>
+                        </div></li>
                     </ul>
-
+                    </div>
+                    <div class="imageContainer">
+                            <img id="changeImage" src="./img/list1.png" width="25%" >
+                        </div>
                 </div>
 
-                <div id="gallery" class="gallery">
-                        <div class="view">
-                          <div class="view-container">
-                            <div class="view-item" id="img1"><img src="img/step0.png" width="25%" alt="갤러리 이미지 1"></div>
-                            <div class="view-item" id="img2"><img src="img/step1.png" width="25%" alt="갤러리 이미지 2"></div>
-                            <div class="view-item" id="img3"><img src="img/step0.png" width="25%" alt="갤러리 이미지 3"></div>
-                          </div>
+              
             </section>  
 
 <!--4번째 페이지-->
@@ -119,7 +126,7 @@
                         원하는 이상형의 룸메이트와의 매칭을 도와줍니다.
             </p>
             
-            <a href="https://drive.google.com/file/d/1vkYYuBtrlMMM62tmCliUWfqlzcUaEutp/view?usp=sharing" target="_blank" ><button class="btn3" >기획서 다운로드</button></a>
+            <a href="https://drive.google.com/file/d/19yVewbhKzld88eJeQ6D7uszrNxfnOPwm/view?usp=sharing" target="_blank" ><button class="btn3" >기획서 다운로드</button></a>
         </div>            
         </div>
                 </section>  
@@ -179,7 +186,7 @@
         <section class="section">
                 <div class="section-content">
                         <div class="firstbox">
-                                <img src="img/first01.png" width="30%"><img src="img/first02.png"  width="30%">
+                                <img src="img/first01.png" width="35%"><img src="img/first02.png"  width="35%">
                             </div>
                         <div class="texx">
                     <h3>What personality<br>do you have?</h3>

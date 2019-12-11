@@ -26,189 +26,32 @@ $(document).ready(function(){
   });
 
 
+$(document).ready(function(){
+	
+	$(document).on('mouseover', '[data-toggle="attribute"]', function () {
+			var $target = $($(this).data('target'));
+			var img_switch = $(this).data('switch');
+			$target.attr('src', img_switch);
+			
+			return false;
+		});
 
-//   //스크롤이 제일 위에 오면 옆에 있는 to top이 사라짐
-
-//   document.addEventListener("scroll", yScroll);
-
-// function yScroll() {
-
-//   var yPos = window.pageYOffset;
-
-//   if (yPos > 10) {
-//     document.getElementById("top-btn").style.bottom = "10px";
-//   } else {
-//     document.getElementById("top-btn").style.bottom = "-60px";
-//   }
-// }
-
-// function ScrollTop() {
-
-//   var i = window.pageYOffset;
-
-//   var intervalTimer = setInterval(function() {
-//     if (i > 0) {
-//       window.scrollTo(0, i);
-//       i -= 15;
-//     } else {
-//       document.getElementById("top-btn").style.bottom = "-60px";
-//       clearInterval(intervalTimer);
-//     }
-//   }, 0.5);
-// }
+});
 
 
-// /*옆에서 텍스트 쭉 커짐*/
+// 마우스커서
 
 
-// $(function(){
-//   $(".title").addClass("active");
-// });
+//마우스 커서
+var $cursorDot = document.querySelector("#cursor-dot");
+var $cursorBG = document.querySelector("#cursor-bg");
 
+window.addEventListener("mousemove", onMouseMoveWindow);
 
-// //옆에서 스르륵 나타남
+function onMouseMoveWindow(e) {
+    var posX = e.clientX, posY = e.clientY;
+    TweenMax.to($cursorDot, 0.1,{css : {top:posY,left:posX}, ease : Quad.easeInOut});
+    TweenMax.to($cursorBG, 0.18,{css : {top:posY,left:posX}, ease : Quad.easeInOut});
 
-
-// $(document).ready(function() {
-//   $(window).scroll( function(){
-//       $('.fade-up').each( function(i){
-          
-//           var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-//           var bottom_of_window = $(window).scrollTop() + $(window).height();
-          
-//           if( bottom_of_window > bottom_of_element ){
-//               $(this).animate({'margin-left':'30px'},1500);
-//           }
-          
-//       }); 
-//   });
-// });
-
-
-
-// $(document).ready(function() {
-//   $(window).scroll( function(){
-//       $('.rev').each( function(i){
-          
-//           var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-//           var bottom_of_window = $(window).scrollTop() + $(window).height();
-          
-//           if( bottom_of_window > bottom_of_element ){
-//               $(this).animate({'opacity':'1','margin-top':'0px'}, 1500);
-//           }
-          
-//       }); 
-//   });
-// });
-
-
-
-// $(document).ready(function() {
-//   $(window).scroll( function(){
-//       $('.view-container').each( function(i){
-          
-//           var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-//           var bottom_of_window = $(window).scrollTop() + $(window).height();
-          
-//           if( bottom_of_window > bottom_of_element ){
-//               $(this).animate({'opacity':'1','margin-left':'12%'}, 1800);
-//           }
-          
-//       }); 
-//   });
-// });
-
-
-
-
-
-
-// $(document).ready(function() {
-//   $(window).scroll( function(){
-//       $('.ph').each( function(i){
-          
-//           var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-//           var bottom_of_window = $(window).scrollTop() + $(window).height();
-          
-//           if( bottom_of_window > bottom_of_element ){
-//               $(this).animate({'opacity':'1','margin-top':'0px'}, 1500);
-//           }
-          
-//       }); 
-//   });
-// });
-
-
-
-// //마우스 커서
-// var $cursorDot = document.querySelector("#cursor-dot");
-// var $cursorBG = document.querySelector("#cursor-bg");
-
-// window.addEventListener("mousemove", onMouseMoveWindow);
-
-// function onMouseMoveWindow(e) {
-//     var posX = e.clientX, posY = e.clientY;
-//     TweenMax.to($cursorDot, 0.15,{css : {top:posY,left:posX}, ease : Quad.easeInOut});
-//     TweenMax.to($cursorBG, 0.15,{css : {top:posY,left:posX}, ease : Quad.easeInOut});
-
-// }
-
-
-
-// //클릭시 팝업 나옴
-
-
-
-// // var $viewmore1 = document.getElementsByClassName(".Btnviewmore1");
-// // $viewmore1.addEventListener("click",onClickBtnmore1);
-// // function onClickBtnmore1(e){
-// //   e.preventDefault();
-// //   var popup1 = document.getElementsByClassName("hidden1");
-// //   popup1[0].classList.toggle("show");
-
-// // }
-
-
-
-
-
-
-
-// /*
-// var $btnview = document.querySelector("button#btn-add-item");
-// $btnAddItem.addEventListener("click", onClickBtnAddItem);
-// function onClickBtnAddItem(e) {
-
-//     var number = prompt("숫자를 입력해주세요.");
-//     var $ulList = document.querySelector("ul#list");
-//     if(number !== null && number !== '' && !isNaN(Number(number))){
-//         $ulList.innerHTML = ''; //요소의 HTML 내용 지우기.
-//         number = Number(number);
-//         for(var i = 0; i < number; i++){
-//             var $li = document.createElement("li"); // 가상의 <li></li> 생성.
-//             $li.classList.add("item"); // $li.className = "item";
-//             $li.innerText = i + 1;
-//             $ulList.appendChild($li);
-//         }
-//     }
-// }
-
-// */
-
-
-
-
-// /*
-// var $hidden = document.querySelector("viewmore2")
-
-// window.addEventListener("click", onClickhidden1)
-
-// function onClickhidden1(e) {
-//   e.preventDefault();
-//   var popup1 = document.getElementsByClassName("hidden2");
-//   console.log("popup1");
-//   popup1[0].classList.toggle("show1");
-// }
-
-// */
+}
 
